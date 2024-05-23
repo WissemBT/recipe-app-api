@@ -29,6 +29,7 @@ class UserAdmin(BaseUserAdmin):
     )
     readonly_fields = ['last_login']
 
+<<<<<<< HEAD
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
@@ -44,5 +45,7 @@ class UserAdmin(BaseUserAdmin):
         }),
     )
 
+=======
+>>>>>>> b8b2c6d (adding customized django admin and ability to modify user)
 
 admin.site.register(models.User, UserAdmin)

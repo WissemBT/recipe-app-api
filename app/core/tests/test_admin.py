@@ -37,6 +37,7 @@ class AdminSiteTests(TestCase):
         url = reverse('admin:core_user_change',args=[self.user.id])
         res = self.client.get(url)
 
+<<<<<<< HEAD
         self.assertEqual(res.status_code, 200)
 
     def test_create_user_page(self):
@@ -44,4 +45,6 @@ class AdminSiteTests(TestCase):
         url = reverse('admin:core_user_add')
         res = self.client.get(url)
 
+=======
+>>>>>>> b8b2c6d (adding customized django admin and ability to modify user)
         self.assertEqual(res.status_code, 200)
